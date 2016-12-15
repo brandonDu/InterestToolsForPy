@@ -1,0 +1,9 @@
+{
+    "path" : "D:/gitStockPy/RAna/RanaStockData",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1433992931777.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "63ACE839",
+    "lastKnownWriteTime" : 31525549581926447,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "toPre",
+        "contentUrl" : "content?title=toPre&file=dbe91896eeb7446886c80366b6dfb5a8.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 31,
+        "totalObservations" : 1166,
+        "variables" : 30
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

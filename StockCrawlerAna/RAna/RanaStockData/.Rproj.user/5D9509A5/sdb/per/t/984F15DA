@@ -1,0 +1,17 @@
+{
+    "contents" : "library(randomForest)\nlibrary(foreign)\n# train data : ~,~,rate\n# predict data : ~,~ \ntraining <- toCal[2:31]\npredicting <- toPre[2:30]\n\nind<-sample(2,nrow(training),replace=TRUE,prob=c(0.8,0.2))#/对数据分成两部分，70%训练数据，30%检测数据/\ntraindata<- training [ind==1,]\ntestdata<- training [ind==2,]\n#begin randoforest. \ndata.rf <- randomForest(rate ~ ., data=training, ntree=1000,mtry=7, proximity=TRUE)\n# table(predict(rf), training$rate)\nprint(data.rf)\nplot(data.rf)\nimportance(data.rf)\n\ndata.pred <-  predict(data.rf, predicting)\n\npredrate <- as.data.frame(data.pred)\ncolnames(predrate)<- c('prate')\npredresult <- cbind(toPre[1],predrate)\np.result <- as.data.frame(predresult)\np.sub <- subset(p.result, prate>6)\n\nView(p.sub)\n\n\n",
+    "created" : 1433916832128.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1493859715",
+    "id" : "984F15DA",
+    "lastKnownWriteTime" : 1434095949,
+    "path" : "D:/gitStockPy/RAna/RanaStockData/randomForest.R",
+    "project_path" : "randomForest.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

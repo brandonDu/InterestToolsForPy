@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1434001053824.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "65F778EA",
+    "lastKnownWriteTime" : 7741240723082584096,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "predrate",
+        "contentUrl" : "content?title=predrate&file=4a11c91711b144e7803a420b20344d10.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 2,
+        "totalObservations" : "1166",
+        "variables" : "1"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

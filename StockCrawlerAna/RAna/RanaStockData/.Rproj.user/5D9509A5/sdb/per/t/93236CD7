@@ -1,0 +1,17 @@
+{
+    "contents" : "\n\ndata <- read.csv(\"D:/gitStockPy/stock_2015_05_28.csv\", header=FALSE)\n\nmode(data)\n\n# todStarPri, yesEndPri, nowPri, todMaxPri, todMinPri, nowBuyPri, nowSelPri, dealNum, dealMoney, buyOneNum, buyOnePri, buyTwoNum, buyTwoPri, buyThrNum, buyThrPri, buyForNum, buyForPri, buyFivNum, buyFivPri, selOneNum, selOnePri, selTwoNum, selTwoPri, selThrNum, selThrPri, selForNum, selForPri, selFivNum, selFivPri\ndataYes <- data[1:33]\ndataTod <- data[34:66]\nname <- data[1]\ncolnames(name) <- c(\"name\")\ndataYes <- dataYes[2:30]\ndataTod <- dataTod[2:30]\nrate <- (dataTod[4]-dataYes[3])/dataTod[2]*100\ncolnames(rate) <- c(\"rate\")\n\nrate <- round(rate, digits = 2)\n\nrate <- cbind(name,rate)\n\nrawdata <- cbind(dataYes,rate[2])\n\n\ncolnames(rawdata) <- c(\"todStarPri\", \"yesEndPri\", \"nowPri\", \"todMaxPri\", \"todMinPri\", \"nowBuyPri\", \"nowSelPri\", \"dealNum\",\n                       \"dealMoney\", \"buyOneNum\", \"buyOnePri\", \"buyTwoNum\", \"buyTwoPri\", \"buyThrNum\", \"buyThrPri\",\n                       \"buyForNum\", \"buyForPri\", \"buyFivNum\", \"buyFivPri\", \"selOneNum\", \"selOnePri\", \"selTwoNum\", \"selTwoPri\", \n                       \"selThrNum\", \"selThrPri\", \"selForNum\", \"selForPri\", \"selFivNum\", \"selFivPri\",\"rate\")\ncolnames(dataTod) <- c(\"todStarPri\", \"yesEndPri\", \"nowPri\", \"todMaxPri\", \"todMinPri\", \"nowBuyPri\", \"nowSelPri\", \"dealNum\",\n                       \"dealMoney\", \"buyOneNum\", \"buyOnePri\", \"buyTwoNum\", \"buyTwoPri\", \"buyThrNum\", \"buyThrPri\",\n                       \"buyForNum\", \"buyForPri\", \"buyFivNum\", \"buyFivPri\", \"selOneNum\", \"selOnePri\", \"selTwoNum\", \"selTwoPri\", \n                       \"selThrNum\", \"selThrPri\", \"selForNum\", \"selForPri\", \"selFivNum\", \"selFivPri\")\n\nrawdata <- cbind(name,rawdata)\n\nrawdataPre <- cbind(name,dataTod)\n\nd.rawdata <- as.data.frame(rawdata)\nd.rawdatapre <- as.data.frame(rawdataPre)\n\nd.sub <- subset(d.rawdata, selOneNum>0)\nd.subpre <- subset(d.rawdatapre,selOneNum>0)\n\ntoCal <- d.sub\ntoPre <- d.subpre\n\nView(toPre)\nView(toCal)\nmode(d.rawdata)\n\n",
+    "created" : 1433916897575.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2040669384",
+    "id" : "93236CD7",
+    "lastKnownWriteTime" : 1433995133,
+    "path" : "D:/gitStockPy/RAna/RanaStockData/anaData.R",
+    "project_path" : "anaData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

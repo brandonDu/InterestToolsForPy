@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1433992706273.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AC3FDE35",
+    "lastKnownWriteTime" : 7741240722073845761,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "rawdataPre",
+        "contentUrl" : "content?title=rawdataPre&file=3669c6e8979247dfa621c2e2cb29a852.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 30,
+        "totalObservations" : "1209",
+        "variables" : "30"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

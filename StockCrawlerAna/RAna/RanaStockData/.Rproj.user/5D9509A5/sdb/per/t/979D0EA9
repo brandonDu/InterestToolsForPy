@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1433916933616.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "979D0EA9",
+    "lastKnownWriteTime" : 7741240722073845761,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "toCal",
+        "contentUrl" : "content?title=toCal&file=2b429a826b2347308ab7b6c9ece1960d.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 32,
+        "totalObservations" : 1075,
+        "variables" : 31
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
